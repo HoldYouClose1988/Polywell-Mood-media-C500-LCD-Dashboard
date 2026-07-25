@@ -1,0 +1,54 @@
+device: /dev/ttyUSB0
+baud: 19200
+refresh: 1.0
+write_delay: 0.020
+
+network_interface: ""
+
+storage_devices:
+  - label: OS
+    path: /
+    device: /dev/sda
+  - label: DATA1
+    path: /
+    device: ""
+  - label: DATA2
+    path: /
+    device: ""
+
+pages:
+  - overview
+  - storage
+  - network
+  - temperatures
+  - services
+
+temperature_sources:
+  - cpu
+  - sensor
+  - drives
+
+temperature_sensor_groups: []
+
+services:
+  - smbd
+  - ssh
+  - docker
+
+page_plugin_dir: /etc/polywell-c500/pages
+
+screensaver_enabled: true
+screensaver_timeout: 60
+screensaver_type: snake
+screensaver_interval: 0.45
+
+snake_length: 6
+snake_head: "@"
+snake_body: "o"
+
+starfield_stars: 9
+matrix_columns: 5
+radar_blips: 3
+screensaver_text: OMV
+
+notification_socket: /run/polywell-c500/dashboard.sock

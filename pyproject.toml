@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polywell-c500"
+version = "3.1.0"
+description = "Stable Python driver and dashboard daemon for the Polywell/Mood Media C500 front panel"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["psutil>=5.9", "PyYAML>=6.0"]
+
+[project.scripts]
+polywell-c500 = "polywell_c500.cli:main"
+polywell-c500-dashboard = "polywell_c500.daemon:main"
+polywell-c500-notify = "polywell_c500.notify_cli:main"
+polywell-c500-config = "polywell_c500.configurator:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

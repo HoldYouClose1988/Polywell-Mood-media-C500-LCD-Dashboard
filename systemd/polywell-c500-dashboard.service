@@ -1,0 +1,14 @@
+[Unit]
+Description=Polywell C500 Front Panel Dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/polywell-c500/venv/bin/polywell-c500-dashboard --config /etc/polywell-c500/dashboard.yml
+Restart=on-failure
+RestartSec=3
+User=root
+
+[Install]
+WantedBy=multi-user.target
