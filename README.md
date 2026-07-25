@@ -153,7 +153,7 @@ MIT. See [LICENSE](LICENSE).
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
-///////From the keybaord of the human///////
+///////From the keyboard of the human///////
 
 Obviously, I used AI on a lot of this. This was a weekend project. I bought this thing to use as a headless OMV server, and my goal is complete, so don't expect updates.
 
