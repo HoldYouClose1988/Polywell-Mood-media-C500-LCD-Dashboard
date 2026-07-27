@@ -1,4 +1,4 @@
-# Polywell C500 Front Panel Dashboard
+# Polywell MC500 Front Panel Dashboard
 
 An independent Linux driver and dashboard for the 4×24 character LCD and
 eight-button front panel used in the Polywell C500, including C500 hardware
